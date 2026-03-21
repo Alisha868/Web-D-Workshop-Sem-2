@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call of duty</title>
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url"image.png";
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            background: rgba(0,0,0,0.6);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        div h2{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 2px;
+
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 2px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background: rgb(255, 0, 183);
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background: red;
+            color: white;
+        }
+        p{  background-color: aliceblue;
+            color: #bb1818;
+        }
+        </style>
+</head>
+<body>
+    
+<header>
+    <h1>CALL OF DUTY</h1>
+</header>
+<nav>
+    <img src="call of duty.jpg">
+</nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#modes">Game Modes</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#register">Register</a>
+</nav>
+
+<section id="about" class="container">
+    <article class="card">
+        <h2>About Call of Duty</h2>
+        <p><strong>Call of Duty</strong> is one of the most popular <em>first-person shooter</em> games in the world.</p>
+        <p>It features <b>realistic combat</bk>, multiplayer modes, and battle royale.</p>
+        <blockquote>"Victory comes from teamwork and strategy."</blockquote>
+    </article>
+    <ol>
+    <p>call of duty is fist person shooter military vedio game series and media franchise published by <b>Activision</b> ,starting in 2003</p>
+    </ol>
+    </section>
+    <section id="register" class="container">
+    <div class="card">
+        <h2>Register for Tournament</h2>
+
+        <form>
+            <label>Name:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Choose Platform:</label>
+            <select>
+                <option>PC</option>
+                <option>PlayStation</option>
+                <option>Xbox</option>
+            </select>
+
+            <label>Comments:</label>
+            <textarea rows="4"></textarea>
+
+            <input type="submit" value="Register Now">
+        </form>
+    </div>
+</section>
+</header>
+</body>
+</html>
