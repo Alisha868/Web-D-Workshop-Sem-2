@@ -1,78 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>FitLife</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Tailwind CSS CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
+<title>TechStore</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+rel="stylesheet">
+<!-- Internal CSS -->
+<style>
+body{
+background:#f8f9fa;
+}
+.card:hover{
+transform: scale(1.05);
+transition: 0.3s;
+}
+footer{
+margin-top:50px;
+}
+</style>
 </head>
-<body class="bg-gray-200 font-sans">
-<!-- HEADER -->
-<header class="bg-gradient-to-r from-slate-600 to-indigo-400 text-white p-4">
-<div class="flex justify-between items-center">
-<h1 class="text-xl font-bold">FitLife</h1>
-<nav class="space-x-4 text-sm">
-<a href="#" class="hover:text-gray-200">Home</a>
-<a href="#" class="hover:text-gray-200">Programs</a>
-<a href="#" class="hover:text-gray-200">Trainers</a>
-<a href="#" class="hover:text-gray-200">Contact</a>
-</nav>
-</div>
-</header>
-<!-- HERO SECTION -->
-<section class="bg-gradient-to-r from-sky-200 to-indigo-400 text-white text-center py-16">
-<h2 class="text-4xl font-bold mb-4">
-Transform Your Body & Mind
-</h2>
-<p class="mb-6 text-lg">
-Join FitLife today and achieve your fitness goals with expert trainers.
-</p>
-<button class="bg-gray-200 text-gray-700 px-6 py-2 rounded-md font-semibold hover:bg￾white">
-Join Now
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="#">TechStore</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
 </button>
-</section>
-<!-- PROGRAM SECTION -->
-<section class="py-12 px-6">
-<h3 class="text-3xl font-bold text-center mb-10">
-Our Programs
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- PRODUCTS -->
+<div class="container mt-5">
+<div class="row">
 <!-- Card 1 -->
-<div class="bg-gray-100 p-6 rounded-lg shadow text-center">
-<h4 class="text-red-600 font-bold mb-2">
-Weight Training
-</h4>
-<p>
-Build strength and muscle with guided weight training programs.
-</p>
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+<div class="card">
+<img src="https://img.freepik.com/free-photo/laptop-with-sun-background_1232-
+429.jpg?semt=ais_hybrid&w=740&q=80" width="100px" height="200px" class="card￾img-top">
+<div class="card-body">
+<h5>Laptop</h5>
+<p>High performance laptop</p>
+<h6>₹50,000 <span class="badge bg-success">New</span></h6>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m1">View 
+Details</button>
+</div>
+</div>
 </div>
 <!-- Card 2 -->
-<div class="bg-gray-100 p-6 rounded-lg shadow text-center">
-<h4 class="text-red-600 font-bold mb-2">
-Yoga Classes
-</h4>
-<p>
-Improve flexibility and mental wellness through yoga sessions.
-</p>
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+<div class="card">
+<img
+src="https://darlingretail.com/cdn/shop/files/iPhone_15_Pink_Pure_Back_iPhone_15_Pin
+k_Pure_Front_2up_Screen__WWEN_cfd96ace-df87-4ab3-a96a￾e8e9b13bb7b9_800x.jpg?v=1695104022" width="100px" height="200px" class="card￾img-top">
+<div class="card-body">
+<h5>Mobile</h5>
+<p>Latest smartphone</p>
+<h6>₹30,000 <span class="badge bg-danger">Sale</span></h6>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m2">View 
+Details</button>
+</div>
+</div>
 </div>
 <!-- Card 3 -->
-<div class="bg-gray-100 p-6 rounded-lg shadow text-center">
-<h4 class="text-red-600 font-bold mb-2">
-Diet Plans
-</h4>
-<p>
-Personalized diet plans to complement your fitness routine.
-</p>
+<div class="col-lg-4 col-md-6 col-12 mb-4">
+<div class="card">
+<img src="https://encrypted￾tbn0.gstatic.com/images?q=tbn:ANd9GcTndMcJW71HLgi9ntgoterJiJJjLxbtOVVpyA&s
+" width="100px" height="200px" class="card-img-top">
+<div class="card-body">
+<h5>Headphones</h5>
+<p>Noise cancelling</p>
+<h6>₹5,000 <span class="badge bg-success">New</span></h6>
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m3">View 
+Details</button>
 </div>
 </div>
-</section>
+</div>
+</div>
+</div>
+<!-- MODALS -->
+<div class="modal fade" id="m1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Laptop Details</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+16GB RAM, SSD, Fast performance
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="m2">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Mobile Details</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+High camera quality smartphone
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="m3">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Headphones Details</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+Best sound quality with bass
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
 <!-- FOOTER -->
-<footer class="bg-gradient-to-r from-sky-300 to-indigo-400 text-white text-center py-6">
-<p>© 2026 FitLife | All Rights Reserved</p>
-<p class="text-sm mt-1">
-Contact: info@fitlife.com
-</p>
+<footer class="bg-dark text-white text-center p-3">
+<p>© 2026 TechStore | Follow us on social media</p>
 </footer>
+<!-- Bootstrap JS -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></scri
+pt>
 </body>
 </html>
